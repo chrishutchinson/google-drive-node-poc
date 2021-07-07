@@ -7,7 +7,8 @@ const { DESTINATION_SHEET_ID } = process.env;
 
 const APPROVED_COLUMN_LETTER = "C";
 const SEARCH_ROW_INDEX = 0;
-const SEARCH_TERM = "Renny";
+const SEARCH_TERM = "Chris";
+const REPLACE_VALUE = true;
 
 (async () => {
   if (!DESTINATION_SHEET_ID) {
@@ -25,7 +26,7 @@ const SEARCH_TERM = "Renny";
 
   const sheet = await updateSheetRow(auth, DESTINATION_SHEET_ID, {
     range: `${APPROVED_COLUMN_LETTER}${rowIndex + 1}`,
-    value: true,
+    value: REPLACE_VALUE,
   });
 
   console.log(sheet);
