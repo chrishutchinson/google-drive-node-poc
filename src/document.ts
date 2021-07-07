@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 import { getAuthClient } from "./google/auth";
 import { createDocumentFromTemplate } from "./google/lib";
 

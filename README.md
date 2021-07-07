@@ -9,7 +9,7 @@
 
         yarn
 
-3.  Create a Google Project and enable the "Google Drive" and "Google Docs" APIs – https://developers.google.com/workspace/guides/create-project
+3.  Create a Google Project and enable the "Google Drive", "Google Docs" and "Google Sheets" APIs – https://developers.google.com/workspace/guides/create-project
 4.  Create "Desktop Application" Google credentials for your project – https://developers.google.com/workspace/guides/create-credentials
 5.  Make a copy of `.env.sample` called `.env` and complete
 
@@ -28,4 +28,21 @@ To run it locally:
 
 ```bash
 yarn document
+```
+
+## Google Sheets script
+
+This script:
+
+1. fetches a sheet and it's data (based on the `DESTINATION_SHEET_ID` environment variable)
+2. searches for a row in the data set matching the provided search terms and column
+3. updates a value in the matching row in the sheet
+4. saves the changes back to Google Drive
+
+Source code: `./src/sheet.ts`
+
+To run it locally:
+
+```bash
+yarn sheet
 ```
