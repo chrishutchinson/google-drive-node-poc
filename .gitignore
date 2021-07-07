@@ -1,0 +1,12 @@
+# App
+.env
+
+# Node
+node_modules
+
+# Temp credentials
+credentials.json
+token.json
+
+# macOS
+.DS_Store
