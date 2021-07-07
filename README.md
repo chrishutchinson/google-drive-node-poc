@@ -1,6 +1,6 @@
 # Google Drive integration proof-of-concept
 
-> A couple of small scripts to just demonstration a few integration points with Google Drive
+> A couple of small scripts to demonstrate integration with Google Drive, Google Sheets and Google Docs
 
 ## Getting started
 
